@@ -1,0 +1,19 @@
+{% extends "layout.html" %}rea
+{% block content %}
+<h1>Agregar Platillo</h1>
+<form action="{{url_for('plat_agregado_correctamente')}}" method="post" name="agregar_platillo">
+	Nombre: <input type="text" name="nombre_plat" required><br>
+	Restaurante al que pertenece: <input type="text" name="restaurante_plat"><br>
+	Sabor:
+	<select name="sabor_plat">
+		<option value="Picante">Picante</option>
+		<option value="Salado">Salado</option>
+		<option value="Dulce">Dulce</option>
+		<option value="Agridulce">Agridulce</option>
+		<option value="Amargo">Amargo</option>
+	</select><br>
+	Pais: <input type="text" name="pais_plat"><br>
+	Ingredientes: <textarea name="ingredientes_plat"></textarea><br><br>
+	<input type="submit" value="Agregar">
+</form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Agregar Restaurante</h1>
+<form action="{{url_for('res_agregado_correctamente')}}" method="post" name="agregar_restaurante">
+	Nombre: <input type="text" name="nombre_res" required><br>
+	Tipo de comida: <input type="text" name="tipo_comida_res" required><br>
+	Ubicacion: <input type="text" name="ubicacion_res" required><br>
+	Telefono: <input type="text" name="telefono_res" required><br>
+	Horario: <input type="text" name="horario_res" required><br><br>
+	<input type="submit" value="Agregar">
+</form>
+{% endblock %}
