@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Restaurante por comida de pais</h1>
+<form action="{{url_for('ver_por_pais2')}}" method="post" name="ver_por_pais">
+	Pais: <input type="text" name="pais_plat" required><br>
+	<input type="submit" value="Aceptar">
+</form>
+<ul>
+	{% for item in lista %}
+			<li>{{ item }}</li>
+		{% endfor %}
+		</ul>
+</ul>
+
+{% endblock %}

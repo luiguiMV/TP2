@@ -1,10 +1,24 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Hungry?</title>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    </head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1" />
+	<title>Hungry?</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<div class="resize"></div>
+<!-- Div Wrapper Element Starts Here -->
+<div id="Wrapper">
+<!-- Header Element Starts Here -->
+<header id="header">
+	<!-- Hgroup Element Starts Here -->
+  <hgroup id="title">
+    <!--<h1>Creating HTML5 <span>Responsive Web Template Using Media Queries</span></h1>-->
+    <h1>Hungry Bombur?</h1>
+    <h2>Encuentra tu comida favorita</h2>
+  </hgroup>
+  <!-- Hgroup Element Ends Here -->
+	</header>
     <body>
         {% block content %}{% endblock %}
     </body>

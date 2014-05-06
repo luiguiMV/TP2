@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Platillos por ingrediente</h1>
+<form action="{{url_for('ver_plat_por_ing2')}}" method="POST" name="plat_por_ing">
+	Restaurante: <input type="text" name="rest" required>
+	Ingrediente: <input type="text" name="ingrediente" required><br>
+	<input type="submit" value="Aceptar">
+</form>
+<ul>
+	{% for item in lista %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

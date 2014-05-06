@@ -1,9 +1,18 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>Hungry?</h1>
-    <body>
-	<a href="{{url_for('consultar')}}">Consultar</a>
-	<br>
-	<a href="{{url_for('agregar')}}">Agregar</a>
-	</body>  
+  <!-- Nav Element Starts Here -->
+  <nav class="navigation">
+		<h1>Consultar</h1>
+		<p>Restaurantes</p>
+		<a href="{{url_for('ver_todos')}}">Ver todos</a>
+		<a href="{{url_for('ver_por_tipo')}}">Por tipo de comida</a>
+		<a href="{{url_for('buscar_res')}}">Buscar</a>
+		<a href="{{url_for('ver_por_pais')}}">Por pais</a>
+		<p>Platillos</p>
+		<a href="{{url_for('ver_plat_por_res')}}">Por restaurante</a>
+		<a href="{{url_for('ver_plat_por_ing')}}">Por ingrediente</a>
+		<h2>Agregar</h2>
+        <a href="{{url_for('agregar_restaurante')}}">Agregar Restaurante</a>
+        <a href="{{url_for('agregar_platillo')}}">Agregar Platillo</a>
+      </nav>
 {% endblock %}

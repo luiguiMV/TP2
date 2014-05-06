@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Ver todos los restaurantes</h1>
+<ul>
+    <ul>
+    {% for item in lista %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
